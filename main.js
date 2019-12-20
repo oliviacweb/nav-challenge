@@ -3,11 +3,24 @@ var collectionsTab = document.querySelector('.collections');
 var  wishlistTab = document.querySelector('.wishlist');
 var archiveTab = document.querySelector('.archive');
 var tabContent = document.querySelector('.content');
+var navButtons = document.querySelector('.nav-buttons');
 
-allCoursesTab.addEventListener('click', addCoursesBorder);
-collectionsTab.addEventListener('click', addCollectionsBorder);
-wishlistTab.addEventListener('click', addWishlistBorder);
-archiveTab.addEventListener('click', addArchiveBorder);
+navButtons.addEventListener('click', changeView);
+
+function changeView () {
+  if(event.target.classList.contains('all-courses')) {
+       addCoursesBorder();
+     }
+  else if(event.target.classList.contains('collections')) {
+       addCollectionsBorder();
+    }
+  else if(event.target.classList.contains('wishlist')) {
+         addWishlistBorder();
+    }
+  else if(event.target.classList.contains('archive')) {
+             addArchiveBorder();
+    }
+ }
 
 function addCoursesBorder() {
   allCoursesTab.classList.add('nav-border-bottom');
