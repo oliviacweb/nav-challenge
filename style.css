@@ -1,0 +1,21 @@
+
+.nav-bar {
+  height:110px;
+  width: 100%;
+  background-color: #778899;
+  color: white;
+}
+.nav-buttons {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.nav-tab {
+  background-color: #778899;
+  color: white;
+  margin-right: 10px;
+  padding: 7px;
+  border: none;
+}
+.nav-border-bottom {
+  border-bottom: 4px solid white;
+}
